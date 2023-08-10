@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagenes</title>
+</head>
+<body>
+    <!-- Las imagenes pueden provenir de algunas de tus carpetas de proyecto o pueden se externas de un sitio web -->
+
+    <!-- Externas -->
+    <img src="https://monemaadi.com/wp-content/uploads/2021/09/12ass.png" alt="Logo Monema Adi">
+
+    <!-- Local -->
+    <img src="logo-monema.png" alt="Logo Monema Adi">
+
+    <!-- Normalmente siempre existe una carpeta para imagenes y cuando es asi, primero hay que navegar hasta la
+    carpeta y despues mandar llamar a la imagen.
+     -->
+    <img src="imagenes/logo-monema.png" alt="Logo Monema Adi">
+
+    <!-- Ahora imaginemos que este archivo (imagenes.html) esta dentro de una carpeta y necesitamos insertar una
+    imagen que esta en otra carpeta al mismo nivel. Ej -->
+
+    <!-- Primero la estructura de carpetas :
+
+    -Paginas
+       -imagenes.html
+    -Imagenes
+       -logo-monema.png
+
+    Como podemos ver hay dos carpetas y dentro estan los 2 archivos que necesitamos. Bueno, para llamar la imagen en
+    el archivo imagenes.html necesitamos primero salir de la carpeta paginas y despues entrar a la carpeta imagenes y
+     llamar a la imagen.
+       -->
+    <img src="../imagenes/logo-monema.png" alt="Logo Monema Adi">
+
+    <!-- Como podemos ver con la expresion ../ salimos de una carpeta -->
+
+
+</body>
+</html>
